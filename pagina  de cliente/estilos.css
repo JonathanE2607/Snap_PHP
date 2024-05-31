@@ -2,25 +2,14 @@
 
 :root {
     --color-barra-lateral: #ffffff;
-    --shadow-color: 229deg 5% 38%;
 
-    --shadow-elevation-sidebar-low:
-        1px 0px 1.1px hsl(var(--shadow-color) / 0.23),
-        1.5px 0px 1.7px -1.2px hsl(var(--shadow-color) / 0.23),
-        3.3px 0px 3.7px -2.5px hsl(var(--shadow-color) / 0.23);
-
-    --shadow-elevation-sidebar-medium:
-        1px 0px 1.4px hsl(var(--shadow-color) / 0.08),
-        5.8px -0.1px 8.2px -0.3px hsl(var(--shadow-color) / 0.26),
-        17.5px -0.2px 24.8px -0.5px hsl(var(--shadow-color) / 0.45);
-
-    --color-texto: #ff5024;
-    --color-texto-menu: #ff5024;
+    --color-texto: #ff9f82;
+    --color-texto-menu: #ff744a;
 
     --color-menu-hover: #f8edec;
-    --color-menu-hover-texto: #d64401;
+    --color-menu-hover-texto: #ff5024;
 
-    --color-boton: #ff5024;
+    --color-boton: #c4c4c4;
     --color-boton-texto: #ffffff;
 
     --color-linea: #b4b4b4;
@@ -100,7 +89,7 @@ body {
     background-color: var(--color-barra-lateral);
     transition: width 0.5s ease, background-color 0.3s ease, left 0.5s ease;
     z-index: 50;
-    box-shadow: var(--shadow-elevation-sidebar-medium);
+    border-right: 0.5px solid #dfdfdf; /* Borde derecho gris */
 }
 
 .mini-barra-lateral {
@@ -143,10 +132,6 @@ body {
     margin-left: 5px;
     font-size: 25px;
 }
-
-
-
-
 
 
 /* Menu Navegación */
@@ -222,7 +207,6 @@ body {
 }
 
 .barra-lateral .modo-oscuro ion-icon {
-
     width: 50px;
     font-size: 20px;
 }
@@ -329,7 +313,7 @@ main.min-main {
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 200px) {
     .barra-lateral {
         position: fixed;
         left: -250px;
